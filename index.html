@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hundtränare</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #18324d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 24px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 75%;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 42px;
+    }
+
+    p {
+      color: #777;
+      font-size: 27px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Media query for small screens */
+    @media (max-width: 600px) {
+      nav a {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 33px;
+      }
+
+      .logo {
+        max-width: 400px;
+      }
+
+      section {
+        max-width: 100%;
+        padding: 20px;
+      }
+
+      form {
+        max-width: 100%;
+      }
+
+      form label {
+        font-size: 24px;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 18px;
+      }
+
+      form button[type="submit"] {
+        padding: 20px;
+        font-size: 24px;
+      }
+    }
+
+    /* Logo styling */
+    .logo {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    /* Google Maps mockup */
+    .map {
+      max-width: 600px;
+      margin: 40px auto;
+      border: 1px solid #ddd;
+      height: 300px;
+      background: url('maps.png') no-repeat center center;
+    }
+
+    /* Image below Google Maps mockup */
+    .image {
+      max-width: 600px;
+      margin: 40px auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.png" alt="Logo">
+  </header>
+
+  <nav>
+    <a href="#services">Tjänster</a>
+    <a href="#pricing">Priser</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <section id="services">
+    <h2>Tjänster</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt mattis tortor, eu interdum risus dignissim ac. Vestibulum consectetur nunc sit amet odio consectetur, a feugiat est ultrices. Donec nec tincidunt odio. Vestibulum dignissim lorem at libero vulputate aliquet. Nunc tristique justo vitae mauris euismod tempus. Nullam rutrum, metus eu eleifend volutpat, urna nunc luctus erat, nec dapibus sapien mi ac lectus.</p>
+    <p>Phasellus feugiat turpis vel diam malesuada lacinia. Ut a mi varius, commodo lectus vel, ullamcorper justo. Nunc malesuada auctor metus, a consequat ligula scelerisque vitae. Nullam sed lobortis lectus, sit amet fringilla turpis. Fusce eget velit sed urna tincidunt lacinia eu eu neque. Sed feugiat semper lacus, vitae aliquam mi facilisis vel.</p>
+  </section>
+
+  <section id="pricing">
+    <h2>Priser</h2>
+    <p>Integer vitae tortor sem. Nam et odio facilisis, vestibulum urna in, lacinia nisi. Sed eget felis sem. Aliquam fringilla, lorem vel interdum vulputate, tortor lorem placerat libero, id ultrices quam enim sed mauris. Nam nec aliquam mauris. Nullam bibendum fringilla sem. Duis consectetur enim id urna tincidunt, vitae scelerisque tortor tempor.</p>
+    <p>In sit amet diam consectetur, rhoncus mauris et, viverra neque. Maecenas semper ligula a hendrerit tincidunt. Fusce interdum sapien id leo commodo, vel suscipit mauris egestas. In auctor odio et purus malesuada, ut dignissim massa bibendum. Pellentesque consequat ante vel rutrum accumsan. Suspendisse non tellus rutrum, tempor arcu vel, gravida turpis.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Vi är glada att höra från dig. Kontakta oss för mer information eller för att boka en träningssession för din hund.</p>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Din Email: <input type="email" name="email" style="font-weight: bold;" /></label>
+      </p>
+      <p>
+        <label>Ditt meddelande: <textarea name="message" style="font-weight: bold;"></textarea></label>
+      </p>
+      <p>
+        <button type="submit" style="font-weight: bold; font-size: 200%; padding: 20px;">Skicka</button>
+      </p>
+    </form>
+
+    <div class="map"></div>
+    <img class="image" src="h.jpg" alt="Image">
+  </section>
+
+  <footer>
+    &copy; 2023 Hundtränare. Alla rättigheter förbehållna.
+  </footer>
+</body>
+</html>
